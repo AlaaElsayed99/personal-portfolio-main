@@ -451,6 +451,8 @@ html::-webkit-scrollbar-track {
   line-height: 2;
   transition: 0.3s;
 }
+/* Example styling for the email link */
+
 
 .service-box .icon i {
   font-size: 25px;
