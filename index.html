@@ -58,11 +58,12 @@
     <section class="home" id="home">
       <div class="home-content">
         <div class="profileImage">
-          <img src="images/myPic.png" alt="profileImage" />
+          <img src="images/profile.jpg" alt="profileImage" />
         </div>
         <div class="profile-info">
-          <h1 class="username">Alaa Elsayed</h1>
-          <p class="profile-description">I'm a <span>Dotnet Developer</span></p>
+          <h1 id="header-text" class="username">Alaa Elsayed<br><span class="profile-description"> ( Dotnet Developer )</span></h1>
+          <br>
+          
         </div>
 
         <ul class="social-icons">
@@ -108,9 +109,7 @@
       </div>
 
       <div class="about-content">
-        <div class="profile-image">
-          <img src="images/myPic.png" alt="profileImage" />
-        </div>
+        
 
         <div class="about-info">
           <div class="about-info-description">
@@ -378,7 +377,7 @@
         <div class="work experience-box">
           <div class="experience-box-details">
             <div class="icon">
-              <i class="icon-briefcase"></i>
+              <i class="fa fa-university"></i>
             </div>
             <span>2017 - 2021</span>
             <h2>Bachelor of Computers and Artificial Intelligence</h2>
@@ -399,24 +398,11 @@
     <section class="blog" id="blog">
       <div class="heading">
         <h2>My <span>Blogs</span></h2>
-        <img src="images/dots-bg-light.svg" alt="image" />
+        
       </div>
 
       <div class="blogs-content">
-        <div class="blog-box hover-effect-gradient">
-          <div class="blog-image">
-            <img src="images/3.png" alt="projectImage" />
-          </div>
-          <div class="blog-box-details">
-            <span class="category">Application</span>
-            <span>
-              <i class="icon-heart"></i>
-              <span>75</span>
-            </span>
-          </div>
-          <h2 class="blog-box-title">Portfolio web design & Application</h2>
-        </div>
-
+        <a href="https://github.com/AlaaElsayed99/Chat-Chirp" target="_blank" style="text-decoration: none; color: white" >
         <div class="blog-box hover-effect-gradient">
           <div class="blog-image">
             <img src="images/1.png" alt="projectImage" />
@@ -428,12 +414,13 @@
               <span>65</span>
             </span>
           </div>
-          <h2 class="blog-box-title">
+          <h3 class="blog-box-title">
             Our Global Talking App is a modern and innovative platform that connects 
                 people from all corners of the world
-          </h2>
+          </h3>
+        </a>
         </div>
-
+        <a href="https://github.com/AlaaElsayed99" target="_blank" style="text-decoration: none; color: white" >
         <div class="blog-box hover-effect-gradient">
           <div class="blog-image">
             <img src="images/2.png" alt="projectImage" />
@@ -449,7 +436,27 @@
             Full ecommerce website about a shop website
           </h2>
         </div>
-         
+      </a>
+      <a href="https://github.com/AlaaElsayed99/personal-portfolio-main" target="_blank" style="text-decoration: none; color: white" >
+        <div class="blog-box hover-effect-gradient">
+          <div class="blog-image">
+            <img src="images/3.png" alt="projectImage" />
+          </div>
+          <div class="blog-box-details">
+            <span class="category">Application</span>
+            <span>
+              <i class="icon-heart"></i>
+              <span>75</span>
+            </span>
+          </div>
+          <h2 class="blog-box-title">Portfolio web design & Application</h2>
+        </div>
+      </a>
+
+        
+
+        
+      </div>
     </section>
     <!-- End Blog Section -->
 
@@ -481,16 +488,18 @@
             
             <div class="user-contact">
               <p><i class="fa fa-phone" aria-hidden="true"></i>  Phone:   
-                <a class="btn hover-effect-gradient" href="tel:+201018815804">Call Us on 01018815804
+                <a class="btn hover-effect-gradient" href="tel:+201018815804"> 01018815804
                 </a></span></p>
                 <br>
                 <br>
-                <br>
-              <p> <i class="fa fa-envelope" aria-hidden="true">
+              <p> <i class="fa fa-envelope"></i>
                 
-              </i>  Email:  <a  class=" hover-effect-gradient" style="text-decoration: none; color: red;" target="_blank" 
-              href="https://mail.google.com/mail/?view=cm&to=alaahsghlh@gmail.com">
-              alaahsghlh@gmail.com</a>
+                Email: <a class="btn hover-effect-gradient" style="color: rgb(26, 185, 161);" 
+                target="_blank" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=alaahsghlh@gmail.com">
+                alaahsghlh@gmail.com
+        </a>
+        
 
 </p>
             </div>
@@ -525,7 +534,12 @@
             <textarea id="message"></textarea>
           </div>
 
-          <button class="btn hover-effect-gradient">send message</button>
+          <button class="btn hover-effect-gradient" id="alertButton">Show Alert</button>
+
+            <div class="custom-alert" id="customAlert">
+              <span class="close-btn" onclick="closeAlert()">&times;</span>
+              <p>Thank You For message Us</p>
+            </div>
         </div>
       </div>
     </section>
@@ -537,5 +551,6 @@
       <p>&copy; Alaa Elsayed</p>
     </footer>
     <!-- End Footer Section -->
+    <script src="script.js"></script>
   </body>
 </html>

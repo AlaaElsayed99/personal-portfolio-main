@@ -171,10 +171,35 @@ html::-webkit-scrollbar-track {
   flex-direction: column;
   text-align: center;
 }
+/* Style for the custom alert */
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #721c24;
+}
+
 
 .profileImage {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,9 +214,12 @@ html::-webkit-scrollbar-track {
   height: 100%;
   object-fit: cover;
 }
-
-.profile-description span {
+.username{
   color: var(--primary-color);
+}
+.profile-description{
+  color: var(--primary-color);
+  font-size: smaller;
 }
 
 .social-icons {
