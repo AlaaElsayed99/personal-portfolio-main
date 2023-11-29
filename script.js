@@ -36,4 +36,7 @@ function displayAlert() {
   
   // Event listener for button click to show the custom alert
   document.getElementById('alertButton').addEventListener('click', displayAlert);
-  
+  function increase(){
+    let num=document.querySelector("#num").value;
+    num++;
+  }
